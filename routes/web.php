@@ -53,3 +53,5 @@ Route::get('medicine/{id}', function ($id) {
     return 'Vitamin '.$id.' merupakan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, perferendis nemo? Ex tenetur, dolores iste architecto voluptatem nihil cum omnis dolorem deleniti modi vel excepturi corrupti officiis laboriosam natus labore nobis eaque ipsam ab ipsum non? Repellendus dolorem neque dolor est placeat ad in quia mollitia perspiciatis impedit. Reiciendis, quis?';
 })->name('detail_medicine');
 
+Route::resource('product', 'ProductController');
+Route::resource('category', 'CategoryController');
