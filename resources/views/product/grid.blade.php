@@ -13,7 +13,7 @@
 
         <div class="container mt-4">
             {{-- Pake Grid --}}
-            <div class="row row-cols-3">
+            <div class="row row-cols-4">
                 @foreach ($listdata as $item)
                     <div class="col mb-2">
                         <div class="card">

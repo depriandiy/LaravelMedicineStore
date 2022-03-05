@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(CategorySeeder::class); // sudah dibuat
+        $this->call(CategorySeeder::class); // sudah dibuat
         // $this->call(ProductSeeder::class); // sudah dibuat
+        $this->call(MedicineSeeder::class); // sudah dibuat
     }
 }
