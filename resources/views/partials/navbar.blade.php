@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger">
     <div class="container-fluid">
         {{-- <a class="navbar-brand" href="/mystore">Mystore</a> --}}
-        <a class="navbar-brand" href="/mystore"><img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">Mystore</a>
+        <a class="navbar-brand" href="/mystore/"><img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">Mystore</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,7 +15,8 @@
                         Catalog
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="/medicine">Medicine</a></li>
+                        <li><a class="dropdown-item" href="/medicines">Medicine</a></li>
+                        <li><a class="dropdown-item" href="/category">Category</a></li>
                         <li><a class="dropdown-item" href="/equipment">Equipment</a></li>
                     </ul>
                 </li>

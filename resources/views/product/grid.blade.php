@@ -17,7 +17,9 @@
                 @foreach ($listdata as $item)
                     <div class="col mb-2">
                         <div class="card">
-                            <img src="img/product{{ $item->id }}.jpg" class="card-img-top" alt="{{ $item->generic_name }}">
+                            <a href="medicines/{{ $item->id }}">
+                                <img src="img/product{{ $item->id }}.jpg" class="card-img-top" alt="{{ $item->generic_name }}">
+                            </a>
                             <div class="card-body">
                                 <h4 class="card-title">{{ $item->generic_name }}</h4>
                                 <h6 class="card-text">{{ $item->form }}</h6>

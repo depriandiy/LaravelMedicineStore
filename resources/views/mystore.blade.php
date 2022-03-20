@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -7,14 +7,17 @@
 
         <title>My Store</title>
     </head>
-    <body>
+    <body> --}}
         {{-- Navbar Component --}}
-        @include('partials.navbar')
+        {{-- @include('partials.navbar') --}}
+        @extends('layouts.conquer')
+        @section('conquer')
+            <center>
+                <img src="img/logo.jpg" alt="Logo" class="mt-5" width="40%">
+            </center>
+        @endsection
 
-        <center>
-            <img src="img/logo.jpg" alt="Logo" class="mt-5" width="40%">
-        </center>
-
+{{-- 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
-</html>
+</html> --}}

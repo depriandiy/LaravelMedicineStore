@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::resource('product', 'ProductController');
+Route::resource('medicines', 'MedicineController');
+Route::resource('medicines.show', 'MedicineController@show');
+Route::resource('category', 'CategoryController');
+Route::get('category/listmedicine/{id}', 'CategoryController@showlist');
+Route::get('listcatnomed', 'CategoryController@report');
+Route::get('avgprice', 'CategoryController@avg_price');
+Route::get('onemedicine', 'CategoryController@one_medicine');
+Route::get('highestprice', 'CategoryController@highest_price');
+Route::get('drugoneform', 'MedicineController@drug_one_form');
+
+// Route::get('cobamed', 'MedicineController@report');
+// Route::get('cobacat', 'CategoryController@report');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -52,7 +66,3 @@ Route::get('equipment', function () {
 Route::get('medicine/{id}', function ($id) {
     return 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, perferendis nemo? Ex tenetur, dolores iste architecto voluptatem nihil cum omnis dolorem deleniti modi vel excepturi corrupti officiis laboriosam natus labore nobis eaque ipsam ab ipsum non? Repellendus dolorem neque dolor est placeat ad in quia mollitia perspiciatis impedit. Reiciendis, quis?';
 })->name('detail_medicine');
-
-// Route::resource('product', 'ProductController');
-Route::resource('medicine', 'MedicineController');
-Route::resource('category', 'CategoryController');
